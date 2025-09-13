@@ -1,9 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>تعريف شخصي — مطور ASP.NET</title>
+    <meta
+      name="description"
+      content="صفحة شخصية احترافية لمطور ASP.NET تعرض المهارات والخبرات والمشاريع."
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #0f1724;
+        --card: rgba(255, 255, 255, 0.06);
+        --accent1: #6ee7b7;
+        --accent2: #60a5fa;
+        --accent3: #f472b6;
+        --text: #e6eef8;
+        --muted: #a6b2c7;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Cairo", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 28px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+      }
+      .brand {
+        font-size: 24px;
+        font-weight: 800;
+        color: var(--accent2);
+      }
+      nav ul {
+        display: flex;
+        gap: 16px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      nav a:hover {
+        color: var(--text);
+      }
+
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+      }
+      .hero h1 {
+        font-size: 40px;
+        margin: 0 0 12px;
+        color: var(--accent1);
+      }
+      .hero p {
+        max-width: 600px;
+        margin: 0 auto;
+        color: var(--muted);
+      }
+
+      .section {
+        margin-top: 50px;
+      }
+      h2 {
+        color: var(--accent2);
+        margin-bottom: 16px;
+      }
+      .card {
+        background: var(--card);
+        padding: 18px;
+        border-radius: 12px;
+        margin-bottom: 14px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 14px;
+      }
+      .project {
+        background: var(--card);
+        padding: 18px;
+        border-radius: 12px;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        margin-top: 60px;
+        padding: 20px 0;
+        font-size: 14px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">ASP.NET Developer</div>
+        <nav>
+          <ul>
+            <li><a href="#about">نبذة</a></li>
+            <li><a href="#skills">المهارات</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            <li><a href="#contact">تواصل</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero" id="about">
+        <h1>مرحبا! أنا مصطفى</h1>
+        <p>
+          مطور ASP.NET متخصص في تطوير تطبيقات الويب باستخدام C#، MVC، و .NET
+          Core. أركز على كتابة كود نظيف، حلول قابلة للتوسع، وتجارب مستخدم سلسة.
+        </p>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>المهارات</h2>
+        <div class="skills">
+          <div class="card">C# و ASP.NET Core</div>
+          <div class="card">Entity Framework و LINQ</div>
+          <div class="card">SQL Server و قواعد البيانات</div>
+          <div class="card">HTML, CSS, JavaScript</div>
+          <div class="card">RESTful APIs</div>
+          <div class="card">Git و GitHub</div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>المشاريع</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>نظام إدارة طلاب</h3>
+            <p>
+              تطبيق ويب لإدارة بيانات الطلاب والحضور باستخدام ASP.NET MVC و SQL
+              Server.
+            </p>
+          </div>
+          <div class="project">
+            <h3>متجر إلكتروني</h3>
+            <p>تصميم وتطوير متجر إلكتروني متكامل مع سلة شراء ونظام دفع.</p>
+          </div>
+          <div class="project">
+            <h3>API للخدمات</h3>
+            <p>
+              إنشاء REST API لتطبيق موبايل باستخدام ASP.NET Core و Entity
+              Framework.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>تواصل معي</h2>
+        <div class="card">
+          <p>يمكنك التواصل عبر البريد الإلكتروني:</p>
+          <p><strong>mostafa@example.com</strong></p>
+          <p>
+            أو من خلال GitHub:
+            <a href="#" style="color: var(--accent3)">github.com/mostafa</a>
+          </p>
+        </div>
+      </section>
+
+      <footer>© 2025 مصطفى — مطور ASP.NET. جميع الحقوق محفوظة.</footer>
+    </div>
+  </body>
 </html>
